@@ -1,6 +1,6 @@
 # LofiPod 🎧
 
-Welcome to **LofiPod** – your ultimate study companion! 🎶  
+Welcome to **[LofiPod](https://lofipod.netlify.app/)** – your ultimate study companion! 🎶  
 LofiPod delivers a calming and productive environment with handpicked lofi beats to keep you focused and motivated during study or work sessions.
 
 ## About
@@ -19,3 +19,8 @@ Whether you're writing a paper, coding, or just need a relaxing background to st
 
 - Built with **React** for a smooth and responsive experience.
 - Fetching data for dynamic quotes and music.
+
+## Live Demo
+
+Check out the live demo of **LofiPod** here:  
+[https://lofipod.netlify.app/](https://lofipod.netlify.app/)
