@@ -4,9 +4,10 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end; 
   align-items: center;
-  height: 100vh;
+  height: 100vh; 
+  overflow: hidden; /* Prevent scrolling if not necessary */
 }
 
 .button-container {
@@ -14,21 +15,22 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 20px; /* Add space from the bottom */
 }
 
 .button {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
-
 
 .change-gif-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
   z-index: 2;
+  padding: 10px;
 }
 
 .text {
@@ -52,10 +54,9 @@ span {
   z-index: 12;
 }
 
-.green-box-container{
+.green-box-container {
   padding-right: 5px;
   display: inline-block;
-
 }
 
 .green-box {
@@ -66,11 +67,13 @@ span {
   opacity: 0.5;
 }
 
-.green-box.active-box{
+.green-box.active-box {
   opacity: 1;
 }
 
-button, select, .pointer {
+button,
+select,
+.pointer {
   cursor: url(images/cursors/pointer.svg), pointer !important;
 }
 
@@ -93,6 +96,7 @@ button, select, .pointer {
 .img-btn {
   width: 35px;
   height: 80px;
+  margin: 5px; /* Add spacing between buttons */
 }
 
 .gifs {
@@ -143,4 +147,20 @@ button, select, .pointer {
   left: 0;
   z-index: 1;
   transition: 1s;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .text {
+    font-size: 8px; /* Adjust font size for smaller screens */
+  }
+
+  .img-btn {
+    width: 30px;
+    height: 70px; /* Reduce size of buttons */
+  }
+
+  .button-container {
+    margin-bottom: 10px; /* Reduce margin on smaller screens */
+  }
 }
